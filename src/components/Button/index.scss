@@ -1,0 +1,54 @@
+%button-template {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 17px;
+	padding: 8px 10px;
+	background-color: #fff;
+	outline: none;
+
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 1px 8px 4px rgba(0, 0, 0, 0.13);
+		color: #fff;
+	}
+}
+
+.add-button {
+	@extend %button-template;
+	border: 1px solid #1e84d7;
+	width: 158px;
+	color: #1e84d7;
+	margin-top: 30px;
+
+	i {
+		font-size: 18px;
+		margin-right: 5px;
+	}
+
+	&:hover {
+		background-color: #1e84d7;
+		box-shadow: none;
+		i {
+			color: #fff;
+		}
+	}
+}
+
+.submit {
+	@extend %button-template;
+	width: 100px;
+	height: 34px;
+	border: 1px solid #3b5538;
+	border-radius: 3px;
+	background-color: #b1fd64;
+}
+
+.cancel {
+	@extend %button-template;
+	width: 100px;
+	height: 34px;
+	border: 1px solid #5e344a;
+	border-radius: 3px;
+	background-color: #fe6464;
+}
